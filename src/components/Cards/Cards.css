@@ -1,0 +1,45 @@
+.cards {
+  display: none;
+
+  .cards_all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 120px 20px 150px;
+    gap: 20px;
+
+    .cards_products {
+      border-bottom: 0.5px solid rgb(204, 204, 204);
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        color: rgb(133, 133, 133);
+        text-align: center;
+        font-size: 18.5px;
+        line-height: 55px;
+      }
+    }
+  }
+}
+
+.cards_line {
+  width: 96%;
+  height: 2px;
+  background-color: rgb(215, 215, 215);
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards_line {
+    width: 98%;
+  }
+}

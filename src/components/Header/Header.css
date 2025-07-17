@@ -1,0 +1,79 @@
+header {
+  background-image: url("https://www.golestan.com/wp-content/uploads/2023/01/header-back-1.png");
+  padding-bottom: 37.5px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+  }
+
+  nav {
+    display: none;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 21px;
+      margin-top: 23px;
+
+      li {
+        a {
+          color: rgb(160, 160, 160);
+          font-size: 18.5px;
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    .line {
+      width: 29px;
+      height: 4px;
+      background-color: rgb(164, 164, 164);
+      border-radius: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding-bottom: 5px;
+
+    nav {
+      display: block;
+    }
+
+    .logo {
+      padding-top: 13px;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    nav {
+      ul {
+        gap: 39px;
+      }
+    }
+  }
+}
